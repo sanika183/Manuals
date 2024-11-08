@@ -1,0 +1,97 @@
+library IEEE;
+
+use IEEE.STD_LOGIC_1164.ALL:
+
+Uncomment the following library declaration if using arithmetic functions with Signed or Unsigned values
+
+--use IEEE.NUMERIC_STD.ALL:
+
+Uncomment the following library declaration if instantiating
+
+any Xilinx primitives in this code.
+
+--library UNISIM:
+
+--use UNISIM.VComponents.all;
+
+1
+
+2
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+$1
+
+2 entity universal is
+
+$3
+
+4
+
+$5
+
+$6
+
+7
+
+$8
+
+9
+
+Port (clk,clr,lin, rin: in STD LOGIC: s: in STD LOGIC VECTOR (1 downto 0);
+
+d : in STD LOGIC VECTOR (3 downto 0);
+
+q: out STD_LOGIC_VECTOR (3 downto 0));
+
+end universal;
+
+architecture Behavioral of universal is
+
+1 begin
+
+2 process (clk,clr,lin, rin,s, d)
+
+13 begin
+
+4 if(clr='0') then q<="0000"
+
+5 elsif(clk'event and clk='1') then
+
+6 if (s="00") then q<=q;
+
+7
+
+elsif (s="01") then q<=rin&q(3 downto 1);
+
+8 elsif (s="10") then q<=q(2 downto 0) siin:
+
+9
+
+50
+
+elsif (s="11" then q<-d;
+
+end if;
+
+1 end if;
+
+2 end process;
+
+3
+
+64
+
+55
+
+end Behavioral

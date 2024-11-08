@@ -1,0 +1,39 @@
+library IEEE;
+
+use IEEE.STD_LOGIC_1164.ALL:
+
+use IEEE.STD LOGIC_arith.ALL;
+
+use IEEE.STD_LOGIC_unsigned.ALL:
+
+Uncomment the following library declaration if using arithmetic functions with Signed or Unsigned values -use IEEE.NUMERIC_STD.ALL:
+
+Uncomment the following library declaration if instantiating
+
+any Xilinx primitives in this code.
+
+--library UNISIM;
+
+--use UNISIM.VComponents.all:
+
+entity FOURBITCOUNT is
+
+Port (clk, reset: in STD LOGIC: count end FOURBITCOUNT: : out STD_LOGIC_VECTOR (3 downto 0));
+
+architecture Behavioral of FOURBITCOUNT is signal count_t: begin STD_LOGIC_VECTOR (3 downto 0);
+
+process(clk,reset)
+
+begin
+
+if (reset-'1') then
+
+count t<="0000";
+
+elsif (clk'event and clk='1') then count t<=count +"0001",
+
+end if;
+
+count<<"count t end process;
+
+end Behavioral;
